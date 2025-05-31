@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Thank You – Access HelpHub Assistant</title>
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4712/4712038.png" />
     <style>
         body {
             background: #f8fafd;
             font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #222;
+            color: #232323;
         }
         .container {
-            max-width: 650px;
-            margin: 36px auto;
+            max-width: 700px;
+            margin: 40px auto;
             background: #fff;
             border-radius: 16px;
             box-shadow: 0 8px 32px rgba(60,60,60,0.08);
@@ -32,44 +33,60 @@
         }
         .support {
             margin: 2em 0 0 0;
-            font-size: 1.06em;
+            font-size: 1.08em;
             color: #555;
         }
+        .notice {
+            color: #b11e1e;
+            font-size: 1em;
+            margin-top: 1.7em;
+            margin-bottom: 1em;
+        }
         .privacy {
-            font-size: 0.95em;
+            font-size: 0.97em;
             color: #aaa;
             margin-top: 1.7em;
         }
-        footer {
-            margin-top: 36px;
-            text-align: center;
-            font-size: 0.93em;
-            color: #aaa;
+        .contact-link {
+            margin-top: 2em;
+            font-size: 1.04em;
+        }
+        .contact-link a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        .contact-link a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 14px 2vw; }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>Thank You for Your Purchase!</h1>
-    <p>Your payment was successful.<br>
+    <h1>Thank You for Your Payment!</h1>
+    <p>
+        Your payment was successful.<br>
         Below is your exclusive access to <b>HelpHub Assistant</b>.<br>
-        Save this page for future use.</p>
+        <b>Please bookmark this page for future access.</b>
+    </p>
+    <div class="notice">
+        Do not share this link. Access is for personal use only.<br>
+        For support or issues, email: <a href="mailto:medecemecev@gmail.com">medecemecev@gmail.com</a>
+    </div>
     <div class="embed">
         <!-- Replace the src with your Chatbase bot link -->
         <iframe src="https://www.chatbase.co/chatbot-iframe/FW0Lsh-qzWFtzbLcj44bL"
                 width="100%" height="600" style="border:none; max-width: 100%;">
         </iframe>
     </div>
-    <div class="support">
-        Need technical help or want a custom AI bot for your own business?<br>
-        Contact us: <a href="mailto:medecemecev@gmail.com">medecemecev@gmail.com</a>
-    </div>
     <div class="privacy">
-        Your privacy is important to us. See our <a href="privacy.html">Privacy Policy</a>.
+        No personal data is stored. All payments are securely processed by PayPal.
+    </div>
+    <div class="contact-link">
+        <a href="mailto:medecemecev@gmail.com">Contact support</a>
     </div>
 </div>
-<footer>
-    &copy; 2024 HelpHub Assistant. All rights reserved.
-</footer>
 </body>
 </html>
