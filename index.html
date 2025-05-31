@@ -402,9 +402,18 @@
         footer {
             margin-top: 38px;
             font-size: 0.98em;
-            color: #aaa;
+            color: #444; /* по-тъмен цвят за текст */
             text-align: center;
             padding-bottom: 28px;
+        }
+
+        footer a {
+            color: #2563eb; /* или друг син цвят с висок контраст */
+            text-decoration: underline;
+            transition: color 0.15s;
+        }
+        footer a:hover {
+            color: #154199;
         }
 
         @media (max-width: 700px) {
@@ -641,7 +650,7 @@
 <footer>
     &copy; 2025 HelpHub Assistant. AI Customer Support Chatbot for Businesses.<br>
     <small>
-        <a href="mailto:medecemecev@gmail.com" style="color: #aaa;">Contact us</a>
+        <a href="mailto:medecemecev@gmail.com">Contact us</a>
     </small>
 </footer>
 </body>
