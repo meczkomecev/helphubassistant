@@ -212,7 +212,7 @@
             color: #232323;
         }
         header {
-            background: #2563eb;
+            background: #1741a6; /* по-тъмен син цвят за по-добър контраст */
             color: #fff;
             padding: 12px 0;
             text-align: center;
@@ -222,17 +222,34 @@
         .nav-links {
             margin-top: 8px;
             margin-bottom: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
         }
         .nav-links a {
             color: #fff;
             text-decoration: none;
-            margin: 0 16px;
+            margin: 0 8px;
             font-weight: 500;
-            transition: color 0.15s;
+            transition: color 0.15s, background 0.15s;
+            font-size: 1.09em;
+            min-height: 48px;
+            line-height: 48px;
+            padding: 0 20px;
+            display: inline-flex;
+            align-items: center;
+            border-radius: 8px;
+            background: none;
         }
-        .nav-links a:hover {
-            color: #ffc439;
+        .nav-links a:hover,
+        .nav-links a:focus {
+            background: #fff;
+            color: #1741a6;
+            outline: 2px solid #1741a6;
+            text-decoration: underline;
         }
+
         .container {
             max-width: 720px;
             margin: 40px auto 0 auto;
@@ -241,7 +258,9 @@
             box-shadow: 0 8px 32px rgba(40,40,40,0.09);
             padding: 38px 24px 24px 24px;
         }
-        h1, h2, h3 { color: #2563eb; }
+        h1, h2, h3, .faq-title {
+            color: #1741a6; /* по-тъмен син */
+        }
         h2 { margin-top: 0.5em; }
         .icon-logo {
             width: 160px;
@@ -252,33 +271,42 @@
             box-shadow: 0 8px 32px rgba(40,40,40,0.11);
             background: #fff;
         }
+
         .benefits {
             text-align: left;
             margin: 2em 0 1.5em 0;
-            font-size: 1.08em;
+            font-size: 1.12em;
         }
         .benefits li {
             margin-bottom: 0.8em;
         }
+
         .paypal-btn {
             margin: 2em 0 1em 0;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             background: #ffc439;
-            color: #222;
+            color: #232323;
             font-weight: bold;
-            border-radius: 7px;
-            padding: 0.8em 2.5em;
-            font-size: 1.16em;
+            border-radius: 8px;
+            padding: 0 32px;
+            font-size: 1.18em;
             border: none;
             cursor: pointer;
-            transition: background 0.2s;
+            min-height: 56px;
+            line-height: 56px;
             box-shadow: 0 4px 14px rgba(60,60,60,0.08);
             text-decoration: none;
+            transition: background 0.18s, color 0.18s;
         }
-        .paypal-btn:hover {
-            background: #ffd700;
+        .paypal-btn:hover,
+        .paypal-btn:focus {
+            background: #ffe784;
+            color: #1741a6;
+            outline: 2px solid #1741a6;
         }
-        /* FAQ & Reviews Section */
+
         .faq-section {
             max-width: 650px;
             margin: 38px auto 28px auto;
@@ -288,7 +316,7 @@
             padding: 32px 28px 28px 28px;
         }
         .faq-title {
-            color: #2563eb;
+            color: #1741a6;
             margin-bottom: 20px;
             text-align: left;
             font-size: 1.7em;
@@ -302,13 +330,15 @@
         }
         .faq-item .faq-q {
             font-weight: 600;
-            color: #222;
+            color: #232323;
             margin-bottom: 4px;
+            font-size: 1.09em;
         }
         .faq-item .faq-a {
             color: #3e3e3e;
-            font-size: 1.05em;
+            font-size: 1.06em;
         }
+
         .rating-summary {
             font-weight: bold;
             margin: 28px 0 8px 0;
@@ -329,7 +359,7 @@
             background: #f6f8fc;
             border-radius: 8px;
             padding: 14px 20px;
-            border-left: 4px solid #2563eb;
+            border-left: 4px solid #1741a6;
             margin-bottom: 10px;
         }
         .review-header {
@@ -352,6 +382,7 @@
             font-size: 1em;
             font-weight: bold;
         }
+
         .disclaimer, .gdpr, .privacy {
             font-size: 0.98em;
             color: #757575;
@@ -359,12 +390,13 @@
             line-height: 1.5;
         }
         .privacy a {
-            color: #2563eb;
+            color: #1741a6;
             text-decoration: none;
         }
         .privacy a:hover {
             text-decoration: underline;
         }
+
         footer {
             margin-top: 38px;
             font-size: 0.98em;
@@ -372,12 +404,33 @@
             text-align: center;
             padding-bottom: 28px;
         }
+
         @media (max-width: 700px) {
             .container, .faq-section {
                 padding: 14px 4vw;
             }
             h1 { font-size: 2em; }
-            .nav-links a { margin: 0 8px; }
+            .nav-links a {
+                margin: 0 2px;
+                font-size: 1.09em;
+                min-width: 90px;
+                padding: 0 8px;
+                line-height: 48px;
+            }
+            .nav-links {
+                gap: 5px;
+            }
+            .icon-logo {
+                width: 120px;
+                height: 120px;
+                margin: 24px auto 24px auto;
+            }
+            .paypal-btn {
+                min-height: 48px;
+                line-height: 48px;
+                padding: 0 14vw;
+                font-size: 1.11em;
+            }
         }
     </style>
 </head>
