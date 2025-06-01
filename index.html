@@ -211,14 +211,9 @@
 
     <link rel="manifest" href="/manifest.json" />
 
-
     <style>
-        @font-face {
-            font-family: 'Segoe UI';
-            font-display: swap;
-        }
         body {
-            font-family: 'Segoe UI', Arial, 'Liberation Sans', 'Helvetica Neue', system-ui, sans-serif;
+            font-family: system-ui, Arial, sans-serif;
             background: #f8fafd;
             margin: 0;
             padding: 0;
@@ -289,7 +284,7 @@
         }
 
         .benefits {
-            min-height: 200px; /* или точната височина на всички li събрани */
+            min-height: 200px;
             padding: 0;
             margin: 2em 0 1.5em 0;
             font-size: 1.12em;
@@ -306,6 +301,7 @@
             gap: 0.6em;
             font-size: 1.08em;
             line-height: 1.4;
+            overflow: hidden;
         }
         .checkmark {
             width: 2em;
