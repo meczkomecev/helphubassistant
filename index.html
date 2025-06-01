@@ -289,29 +289,35 @@
         }
 
         .benefits {
-            min-height: 180px; /* CLS оптимизация: осигурява място докато се зарежда съдържанието */
+            display: flex;
+            flex-direction: column;
+            gap: 0.8em;
             margin: 2em 0 1.5em 0;
             font-size: 1.12em;
+            min-height: 200px; /* Място за списъка докато се зарежда */
             padding: 0;
         }
         .benefits li {
-            min-height: 32px;  /* CLS оптимизация: фиксирана височина за всички li */
+            min-height: 32px;
             display: flex;
             align-items: center;
-            list-style: none;  /* Скрий булетите */
-            margin-bottom: 0.8em;
+            list-style: none;
+            gap: 0.6em;
             font-size: 1.08em;
             line-height: 1.4;
-            gap: 0.6em;
         }
-        .benefits li::before {
-            content: "✅";
+        .checkmark {
+            width: 2em;
             min-width: 2em;
             display: inline-block;
             text-align: center;
-            margin-right: 0.5em;
-            font-size: 1.2em;
+            color: #178b13;
+            font-size: 1.25em;
             flex-shrink: 0;
+        }
+        .checkmark::before {
+            content: "✓";
+            font-weight: bold;
         }
 
         .paypal-btn {
@@ -501,11 +507,11 @@
         <strong>Instant answers, automation, and happy customers – no coding required.</strong>
     </p>
     <ul class="benefits">
-        <li>24/7 instant AI-powered customer support for websites, SaaS, and e-commerce</li>
-        <li>Handles FAQ, orders, support, feedback and more</li>
-        <li>Quick PayPal payment, instant access, no contracts</li>
-        <li>Easy to integrate with your site or share as a portal</li>
-        <li>Save time, reduce costs, scale your support easily</li>
+        <li><span class="checkmark"></span>24/7 instant AI-powered customer support for websites, SaaS, and e-commerce</li>
+        <li><span class="checkmark"></span>Handles FAQ, orders, support, feedback and more</li>
+        <li><span class="checkmark"></span>Quick PayPal payment, instant access, no contracts</li>
+        <li><span class="checkmark"></span>Easy to integrate with your site or share as a portal</li>
+        <li><span class="checkmark"></span>Save time, reduce costs, scale your support easily</li>
     </ul>
     <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/F8G4NMA7TRNT4" target="_blank" rel="noopener">
         Pay with PayPal – Instant Access
