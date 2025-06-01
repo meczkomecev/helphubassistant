@@ -218,7 +218,7 @@
             font-display: swap;
         }
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, 'Liberation Sans', 'Helvetica Neue', system-ui, sans-serif;
             background: #f8fafd;
             margin: 0;
             padding: 0;
@@ -289,16 +289,17 @@
         }
 
         .benefits {
+            min-height: 200px; /* или точната височина на всички li събрани */
+            padding: 0;
+            margin: 2em 0 1.5em 0;
+            font-size: 1.12em;
             display: flex;
             flex-direction: column;
             gap: 0.8em;
-            margin: 2em 0 1.5em 0;
-            font-size: 1.12em;
-            min-height: 200px; /* Място за списъка докато се зарежда */
-            padding: 0;
         }
         .benefits li {
-            min-height: 32px;
+            min-height: 40px;
+            height: 40px;
             display: flex;
             align-items: center;
             list-style: none;
