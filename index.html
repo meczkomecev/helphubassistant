@@ -31,34 +31,37 @@
         header {
             background: #1741a6;
             color: #fff;
-            padding: 12px 0;
+            padding: 4px 0; /* беше 12px 0 */
             text-align: center;
-            font-size: 1.08em;
+            font-size: 1em; /* беше 1.08em */
             letter-spacing: 0.03em;
         }
+
         .nav-links {
-            margin-top: 8px;
+            margin-top: 2px; /* беше 8px */
             margin-bottom: 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 12px;
+            gap: 6px; /* беше 12px */
         }
+
         .nav-links a {
             color: #fff;
             text-decoration: none;
-            margin: 0 8px;
+            margin: 0 4px;   /* беше 0 8px */
             font-weight: 500;
             transition: color 0.15s, background 0.15s;
-            font-size: 1.09em;
-            min-height: 48px;
-            line-height: 48px;
-            padding: 0 20px;
+            font-size: 1em;  /* беше 1.09em */
+            min-height: 36px; /* беше 48px */
+            line-height: 36px; /* беше 48px */
+            padding: 0 10px; /* беше 0 20px */
             display: inline-flex;
             align-items: center;
             border-radius: 8px;
             background: none;
         }
+
         .nav-links a:hover,
         .nav-links a:focus {
             background: #fff;
@@ -66,6 +69,7 @@
             outline: 2px solid #1741a6;
             text-decoration: underline;
         }
+
         .container {
             max-width: 720px;
             margin: 40px auto 0 auto;
@@ -487,19 +491,17 @@
 </head>
 <body>
 <header>
-    <div>
-        <b>HelpHub Assistant</b>
-    </div>
-    <nav class="nav-links">
-        <a href="https://helphubassistant.pages.dev/">Home</a>
-        <a href="https://helphubassistant.pages.dev/privacy.html">Privacy Policy</a>
-        <a href="https://helphubassistant.pages.dev/terms.html">Terms of Service</a>
-        <a href="https://helphubassistant.pages.dev/disclaimer.html">Disclaimer</a>
+    <div style="font-size:1.09em;"> <b>HelpHub Assistant</b> </div>
+    <nav class="nav-links" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="/disclaimer.html">Disclaimer</a>
         <a href="mailto:medecemecev@gmail.com">Contact</a>
     </nav>
 </header>
 <div class="container">
-    <img class="icon-logo" src="icon_380x380.webp" alt="HelpHub Assistant Logo" fetchpriority="high" decoding="async" />
+    <img class="icon-logo" src="icon_440x440.webp" alt="HelpHub Assistant Logo" fetchpriority="high" decoding="async" />
     <h1>HelpHub Assistant</h1>
     <h2>AI Customer Support Chatbot <br> Instant 24/7 Service</h2>
     <p>
