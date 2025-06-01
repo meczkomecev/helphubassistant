@@ -213,6 +213,10 @@
 
 
     <style>
+        @font-face {
+            font-family: 'Segoe UI';
+            font-display: swap;
+        }
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             background: #f8fafd;
@@ -221,7 +225,7 @@
             color: #232323;
         }
         header {
-            background: #1741a6; /* по-тъмен син цвят за по-добър контраст */
+            background: #1741a6;
             color: #fff;
             padding: 12px 0;
             text-align: center;
@@ -266,11 +270,14 @@
             border-radius: 18px;
             box-shadow: 0 8px 32px rgba(40,40,40,0.09);
             padding: 38px 24px 24px 24px;
+            min-height: 780px;
         }
+
         h1, h2, h3, .faq-title {
-            color: #1741a6; /* по-тъмен син */
+            color: #1741a6;
         }
         h2 { margin-top: 0.5em; }
+
         .icon-logo {
             width: 90%;
             height: 90%;
@@ -282,12 +289,29 @@
         }
 
         .benefits {
-            text-align: left;
+            min-height: 180px; /* CLS оптимизация: осигурява място докато се зарежда съдържанието */
             margin: 2em 0 1.5em 0;
             font-size: 1.12em;
+            padding: 0;
         }
         .benefits li {
+            min-height: 32px;  /* CLS оптимизация: фиксирана височина за всички li */
+            display: flex;
+            align-items: center;
+            list-style: none;  /* Скрий булетите */
             margin-bottom: 0.8em;
+            font-size: 1.08em;
+            line-height: 1.4;
+            gap: 0.6em;
+        }
+        .benefits li::before {
+            content: "✅";
+            min-width: 2em;
+            display: inline-block;
+            text-align: center;
+            margin-right: 0.5em;
+            font-size: 1.2em;
+            flex-shrink: 0;
         }
 
         .paypal-btn {
@@ -412,13 +436,12 @@
         footer {
             margin-top: 38px;
             font-size: 0.98em;
-            color: #444; /* по-тъмен цвят за текст */
+            color: #444;
             text-align: center;
             padding-bottom: 28px;
         }
-
         footer a {
-            color: #2563eb; /* или друг син цвят с висок контраст */
+            color: #2563eb;
             text-decoration: underline;
             transition: color 0.15s;
         }
@@ -478,11 +501,11 @@
         <strong>Instant answers, automation, and happy customers – no coding required.</strong>
     </p>
     <ul class="benefits">
-        <li>✅ 24/7 instant AI-powered customer support for websites, SaaS, and e-commerce</li>
-        <li>✅ Handles FAQ, orders, support, feedback and more</li>
-        <li>✅ Quick PayPal payment, instant access, no contracts</li>
-        <li>✅ Easy to integrate with your site or share as a portal</li>
-        <li>✅ Save time, reduce costs, scale your support easily</li>
+        <li>24/7 instant AI-powered customer support for websites, SaaS, and e-commerce</li>
+        <li>Handles FAQ, orders, support, feedback and more</li>
+        <li>Quick PayPal payment, instant access, no contracts</li>
+        <li>Easy to integrate with your site or share as a portal</li>
+        <li>Save time, reduce costs, scale your support easily</li>
     </ul>
     <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/F8G4NMA7TRNT4" target="_blank" rel="noopener">
         Pay with PayPal – Instant Access
