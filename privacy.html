@@ -91,22 +91,11 @@
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSFWYTF12B"></script>
     <script>
-        let gaLoaded = false;
-        function loadGA() {
-            if (gaLoaded) return;
-            gaLoaded = true;
-            var s = document.createElement('script');
-            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-DSFWYTF12B';
-            s.async = true;
-            document.head.appendChild(s);
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            window.gtag = gtag;
-            gtag('js', new Date());
-            gtag('config', 'G-DSFWYTF12B');
-        }
-        window.addEventListener('scroll', loadGA, {once:true});
-        window.addEventListener('click', loadGA, {once:true});
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DSFWYTF12B');
     </script>
 </head>
 <body>
