@@ -197,6 +197,111 @@
         footer a:hover {
             color: #154199;
         }
+        .usages-block {
+            margin: 34px 0 20px 0;
+            background: #f8fafb;
+            border-radius: 14px;
+            box-shadow: 0 2px 10px rgba(80,120,180,0.08);
+            padding: 28px 24px 22px 24px;
+            font-size: 1.08em;
+            color: #21409a;
+        }
+        .usages-block h3 {
+            color: #1741a6;
+            font-size: 1.32em;
+            margin-bottom: 12px;
+        }
+        .usages-block ul.usages-list {
+            margin: 14px 0 14px 0;
+            padding-left: 1.2em;
+        }
+        .usages-block ul.usages-list li {
+            margin-bottom: 0.7em;
+            list-style: disc inside;
+            color: #3053b7;
+        }
+        .usages-block strong {
+            color: #257aff;
+            font-weight: 600;
+        }
+        .faq-section {
+            max-width: 650px;
+            margin: 38px auto 28px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(40,40,40,0.07);
+            padding: 32px 28px 28px 28px;
+        }
+        .faq-title {
+            color: #1741a6;
+            margin-bottom: 20px;
+            text-align: left;
+            font-size: 1.7em;
+            font-weight: bold;
+        }
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            margin-bottom: 22px;
+        }
+        .faq-item .faq-q {
+            font-weight: 600;
+            color: #232323;
+            margin-bottom: 4px;
+            font-size: 1.09em;
+        }
+        .faq-item .faq-a {
+            color: #3e3e3e;
+            font-size: 1.06em;
+        }
+
+        .rating-summary {
+            font-weight: bold;
+            margin: 28px 0 8px 0;
+            color: #316edb;
+        }
+        .reviews-title {
+            color: #2364ba;
+            font-size: 1.15em;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        .reviews-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .review {
+            background: #f6f8fc;
+            border-radius: 8px;
+            padding: 14px 20px;
+            border-left: 4px solid #1741a6;
+            margin-bottom: 10px;
+        }
+        .review-header {
+            font-size: 1.05em;
+            font-weight: 600;
+            color: #1a3456;
+            margin-bottom: 2px;
+        }
+        .review-body {
+            color: #333;
+            margin-bottom: 3px;
+        }
+        .review-date {
+            color: #23408e;
+            background: none;
+            font-weight: 600;
+        }
+        .review-rating {
+            color: #1a6800;
+            background: #fae276;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 5px;
+            display: inline-block;
+        }
         @media (max-width: 700px) {
             .container { padding: 14px 4vw; }
             .icon-logo { width: 100%; max-width: 96vw; margin: 24px auto 24px auto; }
@@ -204,6 +309,8 @@
             .benefits-block { min-height: 135px; height: 135px; }
             .benefits-list { min-height: 105px; height: 105px; padding: 10px 8px; }
             .benefit-row { min-height: 18px; height: 18px; font-size: 0.96em; }
+            .usages-block { padding: 13px 6vw; font-size: 0.97em; }
+            .usages-block h3 { font-size: 1.13em; }
         }
     </style>
     <script type="application/ld+json">
@@ -399,7 +506,30 @@
         Boost your business with a next-generation AI chatbot!<br>
         <strong>Instant answers, automation, and happy customers – no coding required.</strong>
     </p>
-    <!-- CLS-FREE Benefits block -->
+    <section class="usages-block" aria-label="Common Use Cases and Features">
+        <h3>Popular Usages & Features</h3>
+        <p>
+            HelpHub Assistant is designed for a wide range of businesses and online services that require <strong>AI-powered customer support</strong>, <strong>chatbot automation</strong>, and <strong>24/7 virtual assistant</strong> functionality. Our chatbot seamlessly integrates into your <strong>website</strong> or <strong>SaaS platform</strong>, automates replies to <strong>FAQ</strong> and support requests, and enables instant, secure payments via <strong>PayPal</strong>.
+        </p>
+        <ul class="usages-list">
+            <li>AI customer support chatbot for websites, SaaS, and e-commerce</li>
+            <li>Business automation and sales bot for online shops</li>
+            <li>Live chat assistant for instant answers and lead capture</li>
+            <li>Support automation: FAQ, orders, feedback, and ticketing</li>
+            <li>Integration with PayPal, Stripe, and major payment platforms</li>
+            <li>Multi-language support for global businesses</li>
+            <li>Chatbot for customer service, onboarding, and troubleshooting</li>
+            <li>Chatbot marketplace – buy or sell AI bots for your needs</li>
+            <li>Secure, GDPR-compliant chat support solution</li>
+            <li>Fast setup, no coding required, instant access</li>
+        </ul>
+        <p>
+            Whether you need a <strong>chatbot for your website</strong>, a <strong>virtual assistant for SaaS</strong>, or want to <strong>automate customer service</strong> and <strong>increase sales</strong>, HelpHub Assistant is your all-in-one solution.
+        </p>
+    </section>
+    <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/F8G4NMA7TRNT4" target="_blank" rel="noopener">
+        Pay with PayPal – Instant Access
+    </a>
     <div class="benefits-block" aria-label="Product benefits">
         <div class="benefits-list">
             <div class="benefit-row"><span class="checkmark"></span>24/7 instant AI-powered customer support for websites, SaaS, and e-commerce</div>
@@ -409,9 +539,6 @@
             <div class="benefit-row"><span class="checkmark"></span>Save time, reduce costs, scale your support easily</div>
         </div>
     </div>
-    <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/F8G4NMA7TRNT4" target="_blank" rel="noopener">
-        Pay with PayPal – Instant Access
-    </a>
     <section class="faq-section">
         <h3 class="faq-title">Frequently Asked Questions</h3>
         <div class="faq-list">
@@ -577,6 +704,9 @@
         <a href="https://helphubassistant.pages.dev/terms.html">Terms of Service</a> |
         <a href="https://helphubassistant.pages.dev/disclaimer.html">Disclaimer</a>
     </div>
+    <a class="paypal-btn" href="https://www.paypal.com/ncp/payment/F8G4NMA7TRNT4" target="_blank" rel="noopener">
+        Pay with PayPal – Instant Access
+    </a>
 </div>
 <footer>
     &copy; 2025 HelpHub Assistant. AI Customer Support Chatbot for Businesses.<br>
