@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" amp>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
     <meta charset="UTF-8">
     <title>Thank You – Access HelpHub Assistant</title>
     <meta content="noindex, nofollow" name="robots">
@@ -14,7 +17,7 @@
     <link href="icon_512x512.webp" rel="icon" sizes="512x512" type="image/webp"/>
 
     <link href="/manifest.json" rel="manifest"/>
-    <style>
+    <style amp-custom>
         body {
             background: #f8fafd;
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -84,18 +87,8 @@
             }
         }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSFWYTF12B"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-DSFWYTF12B');
-    </script>
+    
+    
 </head>
 <body>
 <div class="container">
@@ -115,14 +108,14 @@
             <div style="position:relative;">
     <textarea id="embed-code" readonly style="width:100%; font-family:monospace; font-size:1.07em; background:#f3f5fa; color:#222; border-radius:8px; border:1px solid #dbeafe; padding:14px 48px 14px 12px; resize:none; min-height:90px; box-sizing:border-box;">&lt;iframe src="https://www.chatbase.co/chatbot-iframe/FW0Lsh-qzWFtzbLcj44bL"
     width="100%" height="600" style="border:none; max-width:100%;"&gt;&lt;/iframe&gt;</textarea>
-                <button onclick="navigator.clipboard.writeText(document.getElementById('embed-code').value)" style="position:absolute; right:8px; top:9px; background:#2563eb; color:#fff; border:none; border-radius:7px; padding:6px 12px; font-size:0.97em; cursor:pointer;">
+                <button style="position:absolute; right:8px; top:9px; background:#2563eb; color:#fff; border:none; border-radius:7px; padding:6px 12px; font-size:0.97em; cursor:pointer;">
                     Copy
                 </button>
             </div>
         </div>
-        <iframe height="600"
-                src="https://www.chatbase.co/chatbot-iframe/FW0Lsh-qzWFtzbLcj44bL" style="border:none; max-width: 100%;" width="100%">
-        </iframe>
+        <amp-iframe height="600"
+                src="https://www.chatbase.co/chatbot-iframe/FW0Lsh-qzWFtzbLcj44bL" style="border:none; max-width: 100%;" width="100%" layout="responsive" sandbox="allow-scripts allow-same-origin" frameborder="0">
+        </amp-iframe>
     </div>
     <div class="privacy">
         No personal data is stored. All payments are securely processed by PayPal.
