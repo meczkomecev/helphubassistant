@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Thank You – Access HelpHub Assistant</title>
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/webp" sizes="48x48" href="icon_48x48.webp" />
-    <link rel="icon" type="image/webp" sizes="72x72" href="icon_72x72.webp" />
-    <link rel="icon" type="image/webp" sizes="96x96" href="icon_96x96.webp" />
-    <link rel="icon" type="image/webp" sizes="144x144" href="icon_144x144.webp" />
-    <link rel="icon" type="image/webp" sizes="192x192" href="icon_192x192.webp" />
-    <link rel="icon" type="image/webp" sizes="256x256" href="icon_256x256.webp" />
-    <link rel="icon" type="image/webp" sizes="512x512" href="icon_512x512.webp" />
+    <meta content="noindex, nofollow" name="robots">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="icon_48x48.webp" rel="icon" sizes="48x48" type="image/webp"/>
+    <link href="icon_72x72.webp" rel="icon" sizes="72x72" type="image/webp"/>
+    <link href="icon_96x96.webp" rel="icon" sizes="96x96" type="image/webp"/>
+    <link href="icon_144x144.webp" rel="icon" sizes="144x144" type="image/webp"/>
+    <link href="icon_192x192.webp" rel="icon" sizes="192x192" type="image/webp"/>
+    <link href="icon_256x256.webp" rel="icon" sizes="256x256" type="image/webp"/>
+    <link href="icon_512x512.webp" rel="icon" sizes="512x512" type="image/webp"/>
 
-    <link rel="manifest" href="/manifest.json" />
+    <link href="/manifest.json" rel="manifest"/>
     <style>
         body {
             background: #f8fafd;
@@ -22,58 +22,76 @@
             padding: 0;
             color: #232323;
         }
+
         .container {
             max-width: 700px;
             margin: 40px auto;
             background: #fff;
             border-radius: 16px;
-            box-shadow: 0 8px 32px rgba(60,60,60,0.08);
+            box-shadow: 0 8px 32px rgba(60, 60, 60, 0.08);
             padding: 30px 18px 24px 18px;
             text-align: center;
         }
-        h1 { color: #2563eb; }
+
+        h1 {
+            color: #2563eb;
+        }
+
         .embed {
             margin: 2em 0 1em 0;
             background: #f3f6fc;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(60,60,60,0.07);
+            box-shadow: 0 2px 10px rgba(60, 60, 60, 0.07);
             padding: 8px;
         }
+
         .support {
             margin: 2em 0 0 0;
             font-size: 1.08em;
             color: #555;
         }
+
         .notice {
             color: #b11e1e;
             font-size: 1em;
             margin-top: 1.7em;
             margin-bottom: 1em;
         }
+
         .privacy {
             font-size: 0.97em;
             color: #aaa;
             margin-top: 1.7em;
         }
+
         .contact-link {
             margin-top: 2em;
             font-size: 1.04em;
         }
+
         .contact-link a {
             color: #2563eb;
             text-decoration: none;
         }
+
         .contact-link a:hover {
             text-decoration: underline;
         }
+
         @media (max-width: 700px) {
-            .container { padding: 14px 2vw; }
+            .container {
+                padding: 14px 2vw;
+            }
         }
     </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSFWYTF12B"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-DSFWYTF12B');
@@ -89,12 +107,21 @@
     </p>
     <div class="notice">
         Do not share this link. Access is for personal use only.<br>
-        For support or issues, email: <a href="mailto:medecemecev@gmail.com">medecemecev@gmail.com</a>
+        For support or issues, email: <a href="mailto:medecemecev@gmail.com">medecemecev@gmail.com</a>.
     </div>
     <div class="embed">
-        <!-- Replace the src with your Chatbase bot link -->
-        <iframe src="https://www.chatbase.co/chatbot-iframe/FW0Lsh-qzWFtzbLcj44bL"
-                width="100%" height="600" style="border:none; max-width: 100%;">
+        <div style="margin:24px auto; max-width:700px;">
+            <label for="embed-code" style="font-weight:600; font-size:1.07em; display:block; margin-bottom:8px;">Embed this chatbot:</label>
+            <div style="position:relative;">
+    <textarea id="embed-code" readonly style="width:100%; font-family:monospace; font-size:1.07em; background:#f3f5fa; color:#222; border-radius:8px; border:1px solid #dbeafe; padding:14px 48px 14px 12px; resize:none; min-height:90px; box-sizing:border-box;">&lt;iframe src="https://www.chatbase.co/chatbot-iframe/FW0Lsh-qzWFtzbLcj44bL"
+    width="100%" height="600" style="border:none; max-width:100%;"&gt;&lt;/iframe&gt;</textarea>
+                <button onclick="navigator.clipboard.writeText(document.getElementById('embed-code').value)" style="position:absolute; right:8px; top:9px; background:#2563eb; color:#fff; border:none; border-radius:7px; padding:6px 12px; font-size:0.97em; cursor:pointer;">
+                    Copy
+                </button>
+            </div>
+        </div>
+        <iframe height="600"
+                src="https://www.chatbase.co/chatbot-iframe/FW0Lsh-qzWFtzbLcj44bL" style="border:none; max-width: 100%;" width="100%">
         </iframe>
     </div>
     <div class="privacy">
@@ -104,5 +131,32 @@
         <a href="mailto:medecemecev@gmail.com">Contact Us</a>
     </div>
 </div>
+<footer style="margin-top:38px; font-size:1.05em; color:#444; text-align:center; padding-bottom:28px;">
+    &copy; 2025 HelpHub Assistant. AI Customer Support Chatbot for Businesses.<br>
+    <div style="display:inline-flex; align-items:center; gap:22px; margin-top:9px;">
+        <a href="mailto:medecemecev@gmail.com" style="color:#2563eb; text-decoration:underline; font-size:1em; transition:color 0.18s;">
+            Contact us
+        </a>
+        <a href="https://instagram.com/helphubassistant"
+           target="_blank"
+           rel="noopener"
+           title="Instagram – HelpHub Assistant"
+           style="color:#222; font-weight:600; text-decoration:none; display:inline-flex; align-items:center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect width="24" height="24" rx="6" fill="#fff"/>
+                <g>
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="5.5" stroke="#e1306c" stroke-width="1.5"/>
+                    <circle cx="12" cy="12" r="4.5" stroke="#e1306c" stroke-width="1.5"/>
+                    <circle cx="18.3" cy="5.7" r="1.2" fill="#e1306c"/>
+                </g>
+            </svg>
+            Instagram
+        </a>
+    </div>
+    <div style="margin-top:18px; font-size:0.98em; color:#666;">
+        AI chatbot powered by <a href="https://www.chatbase.co/" target="_blank" rel="noopener">Chatbase</a>.<br>
+        All rights for the underlying technology belong to their respective owners.
+    </div>
+</footer>
 </body>
 </html>
