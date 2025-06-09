@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: /thank-you-8b1d2c36ef9a.html
-Disallow: /privacy
 Allow: /
 
 Sitemap: https://helphubassistant.pages.dev/sitemap.xml
