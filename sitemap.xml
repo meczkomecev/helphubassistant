@@ -6,17 +6,17 @@
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://helphubassistant.pages.dev/privacy.html</loc>
+        <loc>https://helphubassistant.pages.dev/privacy</loc>
         <priority>0.5</priority>
         <changefreq>yearly</changefreq>
     </url>
     <url>
-        <loc>https://helphubassistant.pages.dev/terms.html</loc>
+        <loc>https://helphubassistant.pages.dev/terms</loc>
         <priority>0.5</priority>
         <changefreq>yearly</changefreq>
     </url>
     <url>
-        <loc>https://helphubassistant.pages.dev/disclaimer.html</loc>
+        <loc>https://helphubassistant.pages.dev/disclaimer</loc>
         <priority>0.4</priority>
         <changefreq>yearly</changefreq>
     </url>
@@ -28,27 +28,27 @@
     </url>
     <!-- BLOG ARTICLES -->
     <url>
-        <loc>https://helphubassistant.pages.dev/blog/ai-chatbots-transform-support.html</loc>
+        <loc>https://helphubassistant.pages.dev/blog/ai-chatbots-transform-support</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://helphubassistant.pages.dev/blog/ai-chatbots-small-business-benefits.html</loc>
+        <loc>https://helphubassistant.pages.dev/blog/ai-chatbots-small-business-benefits</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://helphubassistant.pages.dev/blog/integrate-chatbot-step-by-step.html</loc>
+        <loc>https://helphubassistant.pages.dev/blog/integrate-chatbot-step-by-step</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://helphubassistant.pages.dev/blog/future-of-customer-service-conversational-ai.html</loc>
+        <loc>https://helphubassistant.pages.dev/blog/future-of-customer-service-conversational-ai</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
     <url>
-        <loc>https://helphubassistant.pages.dev/blog/boosting-sales-with-ai-chatbot-strategies.html</loc>
+        <loc>https://helphubassistant.pages.dev/blog/boosting-sales-with-ai-chatbot-strategie</loc>
         <priority>0.8</priority>
         <changefreq>monthly</changefreq>
     </url>
