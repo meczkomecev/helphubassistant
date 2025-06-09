@@ -1,38 +1,94 @@
 <!DOCTYPE html>
-<html lang="en" amp>
+<html amp lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <style amp-boilerplate>
-        body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-            -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-            -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
-            animation:-amp-start 8s steps(1,end) 0s 1 normal both}
-        @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-        @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-        @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-        @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
-        @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
     </style>
     <noscript>
         <style amp-boilerplate>
-            body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
         </style>
     </noscript>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async custom-element="amp-analytics"
             src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Terms of Service | HelpHub Assistant</title>
-    <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/webp" sizes="48x48" href="icon_48x48.webp" />
-    <link rel="icon" type="image/webp" sizes="72x72" href="icon_72x72.webp" />
-    <link rel="icon" type="image/webp" sizes="96x96" href="icon_96x96.webp" />
-    <link rel="icon" type="image/webp" sizes="144x144" href="icon_144x144.webp" />
-    <link rel="icon" type="image/webp" sizes="192x192" href="icon_192x192.webp" />
-    <link rel="icon" type="image/webp" sizes="256x256" href="icon_256x256.webp" />
-    <link rel="icon" type="image/webp" sizes="512x512" href="icon_512x512.webp" />
-    <link rel="canonical" href="https://helphubassistant.pages.dev/terms.html" />
-    <link rel="manifest" href="/manifest.json" />
+    <title>Blog | HelpHub Assistant</title>
+    <link rel="canonical" href="/blog/">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "HelpHub Assistant Blog",
+            "url": "https://helphubassistant.pages.dev/blog/",
+            "description": "Expert articles and guides about AI chatbots, automation, and customer support.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "HelpHub Assistant",
+                "url": "https://helphubassistant.pages.dev/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://helphubassistant.pages.dev/icon_512x512.webp"
+                }
+            }
+        }
+    </script>
     <style amp-custom>
         html, body {
             margin: 0;
@@ -41,6 +97,7 @@
             font-family: system-ui, Arial, sans-serif;
             color: #232323;
         }
+
         header {
             background: #1741a6;
             color: #fff;
@@ -88,10 +145,11 @@
             margin: 40px auto 0 auto;
             background: #fff;
             border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(40,40,40,0.09);
+            box-shadow: 0 8px 32px rgba(40, 40, 40, 0.09);
             padding: 38px 24px 24px 24px;
             min-height: 780px;
         }
+
         .icon-logo {
             width: 90%;
             max-width: 380px;
@@ -99,16 +157,17 @@
             margin: auto auto 18px auto;
             display: block;
             border-radius: 24px;
-            box-shadow: 0 8px 32px rgba(40,40,40,0.11);
+            box-shadow: 0 8px 32px rgba(40, 40, 40, 0.11);
             background: #fff;
             aspect-ratio: 1/1;
         }
+
         .benefits-block {
             width: 100%;
             max-width: 98%;
             background: #fff;
             border-radius: 14px;
-            box-shadow: 0 3px 18px rgba(60,80,80,0.10);
+            box-shadow: 0 3px 18px rgba(60, 80, 80, 0.10);
             border: 1.5px solid #eaeaea;
             margin: 2em 0 1.5em 0;
             padding: 0;
@@ -118,6 +177,7 @@
             min-height: 220px;
             height: 220px;
         }
+
         .benefits-list {
             width: 100%;
             display: flex;
@@ -129,6 +189,7 @@
             min-height: 186px;
             height: 186px;
         }
+
         .benefit-row {
             display: flex;
             align-items: center;
@@ -140,6 +201,7 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
         .checkmark {
             width: 2em;
             min-width: 2em;
@@ -150,10 +212,12 @@
             font-size: 1.2em;
             flex-shrink: 0;
         }
+
         .checkmark::before {
             content: "✓";
             font-weight: bold;
         }
+
         .paypal-btn {
             display: flex;
             align-items: center;
@@ -170,29 +234,34 @@
             border: none;
             cursor: pointer;
             margin: 2em 0 1em 0;
-            box-shadow: 0 4px 14px rgba(60,60,60,0.08);
+            box-shadow: 0 4px 14px rgba(60, 60, 60, 0.08);
             text-decoration: none;
             transition: background 0.18s, color 0.18s;
         }
+
         .paypal-btn:hover,
         .paypal-btn:focus {
             background: #ffe784;
             color: #1741a6;
             outline: 2px solid #1741a6;
         }
+
         .disclaimer, .gdpr, .privacy {
             font-size: 0.98em;
             color: #757575;
             margin-top: 1.5em;
             line-height: 1.5;
         }
+
         .privacy a {
             color: #1741a6;
             text-decoration: none;
         }
+
         .privacy a:hover {
             text-decoration: underline;
         }
+
         footer {
             margin-top: 38px;
             font-size: 0.98em;
@@ -200,46 +269,54 @@
             text-align: center;
             padding-bottom: 28px;
         }
+
         footer a {
             color: #2563eb;
             text-decoration: underline;
             transition: color 0.15s;
         }
+
         footer a:hover {
             color: #154199;
         }
+
         .usages-block {
             background: #fff;
             color: #1a1a1a;
             border-radius: 12px;
-            box-shadow: 0 2px 12px rgba(30,30,50,0.10);
+            box-shadow: 0 2px 12px rgba(30, 30, 50, 0.10);
             padding: 30px 24px;
             margin: 2.2em 0 2em 0;
             font-size: 1.15em;
         }
+
         .usages-block strong {
             font-weight: 700;
             padding: 2px 6px;
             border-radius: 6px;
             letter-spacing: 0.01em;
         }
+
         .usages-block ul,
         .usages-block li {
             margin: 0;
             padding: 0;
             list-style: none;
         }
+
         .usages-block li {
             margin-bottom: 0.7em;
         }
+
         .faq-section {
             max-width: 650px;
             margin: 38px auto 28px auto;
             background: #fff;
             border-radius: 12px;
-            box-shadow: 0 4px 24px rgba(40,40,40,0.07);
+            box-shadow: 0 4px 24px rgba(40, 40, 40, 0.07);
             padding: 32px 28px 28px 28px;
         }
+
         .faq-title {
             color: #1741a6;
             margin-bottom: 20px;
@@ -247,18 +324,21 @@
             font-size: 1.7em;
             font-weight: bold;
         }
+
         .faq-list {
             display: flex;
             flex-direction: column;
             gap: 22px;
             margin-bottom: 22px;
         }
+
         .faq-item .faq-q {
             font-weight: 600;
             color: #232323;
             margin-bottom: 4px;
             font-size: 1.09em;
         }
+
         .faq-item .faq-a {
             color: #3e3e3e;
             font-size: 1.06em;
@@ -269,17 +349,20 @@
             margin: 28px 0 8px 0;
             color: #316edb;
         }
+
         .reviews-title {
             color: #2364ba;
             font-size: 1.15em;
             font-weight: bold;
             margin-bottom: 12px;
         }
+
         .reviews-list {
             display: flex;
             flex-direction: column;
             gap: 16px;
         }
+
         .review {
             background: #f6f8fc;
             border-radius: 8px;
@@ -287,21 +370,25 @@
             border-left: 4px solid #1741a6;
             margin-bottom: 10px;
         }
+
         .review-header {
             font-size: 1.05em;
             font-weight: 600;
             color: #1a3456;
             margin-bottom: 2px;
         }
+
         .review-body {
             color: #333;
             margin-bottom: 3px;
         }
+
         .review-date {
             color: #23408e;
             background: none;
             font-weight: 600;
         }
+
         .review-rating {
             color: #1a6800;
             background: #fae276;
@@ -310,22 +397,57 @@
             border-radius: 5px;
             display: inline-block;
         }
+
         @media (max-width: 700px) {
-            .container { padding: 14px 4vw; }
-            .icon-logo { width: 100%; max-width: 96vw; margin: 24px auto 24px auto; }
-            .paypal-btn { min-height: 48px; height: 48px; font-size: 1.11em; width: 87%; }
-            .benefits-block { min-height: 370px; height: 370px; }
-            .benefits-list { min-height: 356px; height: 356px; padding: 10px 8px; }
-            .benefit-row { min-height: 55px; height: 55px; font-size: 0.96em; }
-            .usages-block { padding: 13px 6vw; font-size: 0.97em; }
-            .usages-block h3 { font-size: 1.13em; }
+            .container {
+                padding: 14px 4vw;
+            }
+
+            .icon-logo {
+                width: 100%;
+                max-width: 96vw;
+                margin: 24px auto 24px auto;
+            }
+
+            .paypal-btn {
+                min-height: 48px;
+                height: 48px;
+                font-size: 1.11em;
+                width: 87%;
+            }
+
+            .benefits-block {
+                min-height: 370px;
+                height: 370px;
+            }
+
+            .benefits-list {
+                min-height: 356px;
+                height: 356px;
+                padding: 10px 8px;
+            }
+
+            .benefit-row {
+                min-height: 55px;
+                height: 55px;
+                font-size: 0.96em;
+            }
+
+            .usages-block {
+                padding: 13px 6vw;
+                font-size: 0.97em;
+            }
+
+            .usages-block h3 {
+                font-size: 1.13em;
+            }
         }
     </style>
 </head>
 <body>
 <header>
-    <div style="font-size:1.09em;"> <b>HelpHub Assistant</b> </div>
-    <nav class="nav-links" aria-label="Main navigation">
+    <div style="font-size:1.09em;"><b>HelpHub Assistant</b></div>
+    <nav aria-label="Main navigation" class="nav-links">
         <a href="/">Home</a>
         <a href="/blog/">Blog</a>
         <a href="/privacy.html">Privacy Policy</a>
@@ -335,71 +457,70 @@
     </nav>
 </header>
 <div class="container">
-    <h1>Terms of Service</h1>
-    <p>Effective date: 2025-05-31</p>
-    <h2>1. Use of Service</h2>
-    <p>HelpHub Assistant provides AI-powered chatbot services for customer support and business automation. By accessing our service, you agree to these terms.</p>
-    <h2>2. Payment</h2>
-    <ul>
-        <li>Payments are processed securely via PayPal.</li>
-        <li>Access to the chatbot is granted after payment confirmation.</li>
-        <li>No recurring payments – each purchase is a one-time fee.</li>
-    </ul>
-    <h2>3. Refund Policy</h2>
-    <ul>
-        <li>Refunds are only available before chatbot access is granted, except where required by law.</li>
-        <li>No refunds after access is provided.</li>
-    </ul>
-    <h2>4. Acceptable Use</h2>
-    <ul>
-        <li>You agree not to misuse the chatbot or attempt to disrupt its operation.</li>
-        <li>The service is provided as-is, with no guarantee of 100% uptime or accuracy.</li>
-        <li>Do not use the chatbot for illegal, abusive, or fraudulent activities.</li>
-    </ul>
-    <h2>5. Limitation of Liability</h2>
-    <p>HelpHub Assistant is not liable for any direct or indirect damages resulting from the use of the chatbot or service. The AI responses are for informational purposes only.</p>
-    <h2>6. Changes</h2>
-    <p>We may update these terms from time to time. Continued use of the service after changes means you accept the new terms.</p>
-    <h2>7. Contact</h2>
-    <p>For questions, contact us at <a href="mailto:medecemecev@gmail.com">Contact us</a></p>
-<h2>8. Third-Party Providers</h2>
-<p>Our chatbot service is powered by external AI providers such as Chatbase. We do not claim ownership over their technology. By using our service, you also agree to Chatbase's terms of service.</p>
+    <h1>HelpHub Assistant Blog</h1>
 
+    <div class="post">
+        <h2><a href="ai-chatbots-transform-support.html">How AI Chatbots Transform Customer Support</a></h2>
+        <p>Discover how AI chatbots are revolutionizing customer support by providing instant answers, improving efficiency, and boosting customer satisfaction.</p>
+    </div>
+    
+    <div class="post">
+        <h2><a href="ai-chatbots-small-business-benefits.html">Top 5 Benefits of Using AI Chatbots for Small Businesses</a></h2>
+        <p>Learn the main advantages of AI chatbots for small businesses and how they help reduce costs and improve customer experience.</p>
+    </div>
+    
+    <div class="post">
+        <h2><a href="integrate-chatbot-step-by-step.html">How to Integrate a Chatbot Into Your Website: Step-by-Step Guide</a></h2>
+        <p>A complete beginner-friendly guide to adding a chatbot to your website, from choosing a provider to going live.</p>
+    </div>
+    
+    <div class="post">
+        <h2><a href="future-of-customer-service-conversational-ai.html">The Future of Customer Service: Trends in Conversational AI</a></h2>
+        <p>Explore emerging trends in conversational AI and what the future holds for customer service technologies.</p>
+    </div>
+    
+    <div class="post">
+        <h2><a href="boosting-sales-with-ai-chatbot-strategies.html">Boosting Sales with AI: Chatbot Strategies That Work</a></h2>
+        <p>Effective chatbot strategies that help online businesses increase their sales and customer retention.</p>
+    </div>
 </div>
 <footer style="margin-top:38px; font-size:1.05em; color:#444; text-align:center; padding-bottom:28px;">
     &copy; 2025 HelpHub Assistant. AI Customer Support Chatbot for Businesses.<br>
     <div style="display:inline-flex; align-items:center; gap:22px; margin-top:9px;">
-        <a href="mailto:medecemecev@gmail.com" style="color:#2563eb; text-decoration:underline; font-size:1em; transition:color 0.18s;">
+        <a href="mailto:medecemecev@gmail.com"
+           style="color:#2563eb; text-decoration:underline; font-size:1em; transition:color 0.18s;">
             Contact us
         </a>
         <a href="https://instagram.com/helphubassistant"
-           target="_blank"
            rel="noopener"
-           title="Instagram – HelpHub Assistant"
-           style="color:#222; font-weight:600; text-decoration:none; display:inline-flex; align-items:center;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect width="24" height="24" rx="6" fill="#fff"/>
+           style="color:#222; font-weight:600; text-decoration:none; display:inline-flex; align-items:center;"
+           target="_blank"
+           title="Instagram – HelpHub Assistant">
+            <svg aria-hidden="true" fill="none" height="26" viewBox="0 0 24 24" width="26">
+                <rect fill="#fff" height="24" rx="6" width="24"/>
                 <g>
-                    <rect x="3.5" y="3.5" width="17" height="17" rx="5.5" stroke="#e1306c" stroke-width="1.5"/>
+                    <rect height="17" rx="5.5" stroke="#e1306c" stroke-width="1.5" width="17" x="3.5" y="3.5"/>
                     <circle cx="12" cy="12" r="4.5" stroke="#e1306c" stroke-width="1.5"/>
-                    <circle cx="18.3" cy="5.7" r="1.2" fill="#e1306c"/>
+                    <circle cx="18.3" cy="5.7" fill="#e1306c" r="1.2"/>
                 </g>
             </svg>
             Instagram
         </a>
     </div>
     <div style="margin-top:18px; font-size:0.98em; color:#666;">
-        AI chatbot powered by <a href="https://www.chatbase.co/" target="_blank" rel="noopener">Chatbase</a>.<br>
+        AI chatbot powered by <a href="https://www.chatbase.co/" rel="noopener" target="_blank">Chatbase</a>.<br>
         All rights for the underlying technology belong to their respective owners.
     </div>
 </footer>
-<amp-analytics type="gtag" data-credentials="include">
+<amp-analytics data-credentials="include" type="gtag">
     <script type="application/json">
         {
             "vars": {
                 "gtag_id": "G-DSFWYTF12B",
                 "config": {
-                    "G-DSFWYTF12B": { "groups": "default" }
+                    "G-DSFWYTF12B": {
+                        "groups": "default"
+                    }
                 }
             }
         }
