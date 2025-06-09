@@ -20,13 +20,11 @@
         <priority>0.4</priority>
         <changefreq>yearly</changefreq>
     </url>
-    <!-- BLOG INDEX -->
     <url>
         <loc>https://helphubassistant.pages.dev/blog/</loc>
         <priority>0.7</priority>
         <changefreq>weekly</changefreq>
     </url>
-    <!-- BLOG ARTICLES -->
     <url>
         <loc>https://helphubassistant.pages.dev/blog/ai-chatbots-transform-support</loc>
         <priority>0.8</priority>
