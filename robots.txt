@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /thank-you-8b1d2c36ef9a
 Disallow: /thank-you-8b1d2c36ef9a.html
 Disallow: /demo
+Disallow: /blog
 Disallow: /demo.html
 Allow: /
 
